@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pau Ruiz</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="mediaqueries.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    </head>
+    <body>
+    <header>
+     <nav id="desktop-nav">
+        <div class="logo">Pau Ruiz</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+     </nav>
+    </header>
+     <section id="perfil">
+        <div class="img-container">
+            <img src="./assets/profile-pic.png" alt="Pau Ruiz">
+        </div>
+        <div class="perfil-text">
+            <p class="perfil-text-p1">Hola, soy</p>
+            <h1 class="titulo-perfil">Pau Ruiz</h1>
+            <p class="perfil-text-p2">Frontend Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-1">Descarga mi CV</button>
+                <button class="btn btn-color-2">Contacto</button>
+            </div>
+            <div class="socials-container">
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-linkedin-in"></i> 
+            </div>
+        </div>
+     </section>
+     <section id="sobre-mi">
+        <div class="sobre-mi-container">
+            <h1 class="titulo-sobre-mi">Sobre mí</h1>
+            <p class="descripcion-sobre-mi"> Hola, soy Pau Ruiz, un apasionado desarrollador frontend. <br>
+                Me encanta crear experiencias web cautivadoras y amigables. <br>
+                Convierto ideas en código y disfruto cada línea escrita. <br>
+                Si quieres que trabajemos juntos, no dudes en contactarme. 
+                 </p>
+        </div>
+     </section>
+     <section id="proyectos">
+        <div class="proyectos-container">
+            <h1 class="titulo-proyectos">Mis proyectos</h1>
+            <div class="proyectos-grid">
+                <div class="proyecto-item"><img src="./assets/project1.jpg" alt="Proyecto 1"></div>
+                <div class="proyecto-item"><img src="./assets/project2.jpg" alt="Proyecto 2"></div>
+                <div class="proyecto-item"><img src="./assets/project3.png" alt="Proyecto 3"></div>
+        </div>
+    </section>
+    <section id="contacto">
+        <div class="contacto-container">
+            <h1 class="titulo-contacto">Contacto</h1>
+            <form>
+                <input type="text" id="Nombre" placeholder="Nombre" required>
+                <input type="text" id="Apellido" placeholder="Apellido" required>
+                <input type="text" id="Email" placeholder="Email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+                <input type="text" id="Número" placeholder="Número de teléfono" required pattern="[0-9]{9}">
+                <h4>Escribe tu mensaje aquí...</h4>
+                <textarea required></textarea>
+                <input type="submit" value="ENVÍA" id="botón">
+            </form>
+        </div>
+    </section>  
+    </body>
+</html>

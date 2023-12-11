@@ -1,0 +1,120 @@
+/* Mobile Vertical */
+@media only screen and (max-width: 767px) {
+    body {
+        margin: 0; /* Ajuste para eliminar el margen predeterminado del body */
+        text-align: center;
+        overflow-x: hidden;
+    }
+
+
+    header {
+        height: auto;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 4vh;
+        height: 96vh;
+        margin: 0;
+        box-sizing: border-box;
+        min-height: fit-content;
+    }
+
+    .nav-links {
+        width: 100%; /* Añadido para asegurar que ocupe el ancho completo */
+        text-align: center;
+    }
+
+    .logo {
+        margin: 1rem auto; /* Ajustado para centrar horizontalmente */
+    }
+
+    #perfil {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .img-container img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    .btn-container {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .titulo-proyectos {
+        margin-top: 2rem; /* Ajustado para un espacio adecuado */
+    }
+
+    .proyectos-container {
+        text-align: center;
+        margin-top: 3rem; /* Ajusta según sea necesario */
+    }
+    
+    
+    .proyectos-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .proyecto-item {
+        width: 100%;
+    }
+
+    .proyecto-item img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        border-radius: 10px;
+    }
+    
+
+    .contacto-container form {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 1rem;
+        box-sizing: border-box;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.02);
+        backdrop-filter: blur(10px);
+    }
+
+    .contacto-container form input,
+    .contacto-container form textarea {
+        width: calc(100% - 20px);
+        margin-bottom: 1rem;
+        padding: 10px;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid var(--textcolor);
+        background: none;
+        color: var(--textcolor);
+        transition: border-color 0.3s;
+    }
+
+    .contacto-container form input::placeholder,
+    .contacto-container form textarea::placeholder {
+        color: var(--textcolor);
+    }
+
+    .contacto-container form #botón {
+        width: 100%;
+    }
+
+    .contacto-container form input:focus,
+    .contacto-container form textarea:focus {
+        border-color: var(--detailscolor);
+    }
+}

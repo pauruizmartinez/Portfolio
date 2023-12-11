@@ -1,0 +1,363 @@
+/* General */
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+:root{
+    --primaryfont:'Poppins', sans-serif;
+    --backgroundcolor: #080809;
+    --headercolor: #080809;
+    --textcolor:#EEFBF5;
+    --detailscolor: #0ae1ff;
+}
+
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+body{
+    font-family: var(--primaryfont);
+    background:var(--backgroundcolor)
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    background: var(--headercolor);
+    height: 11vh;
+}
+
+p{
+    color: var(--textcolor);
+}
+
+/* Transición */
+
+a, 
+.btn{
+    transition: all 300ms ease;
+}
+
+/* Nav 1 */
+
+nav, 
+.nav-links{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+nav{
+    justify-content: space-around;
+    align-items: center;
+    height: 11vh;
+}
+
+a{
+    font-size: 1.25rem;
+    color: var(--textcolor);
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--detailscolor);
+    transition-duration: .5s;
+}
+
+.logo{
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--textcolor);
+}
+
+.logo:hover{
+    color: var(--detailscolor);
+    cursor: default;
+    transition-duration: .5s;
+}
+
+/* Secciones */
+
+section{
+    display: flex;
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+/* Perfil */
+
+#perfil {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 78vh;
+}
+
+.img-container{
+    display: flex;
+    height: 500px;
+    width: 500px;
+    margin: auto 0;
+}
+
+.perfil-text{
+    align-self: center;
+    text-align: center;
+}
+
+.perfil-text p{
+    font-weight: 600;
+}
+
+.perfil-text-p1{
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.perfil-text-p2{
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.titulo-perfil{
+    color: var(--detailscolor);
+    font-size: 4rem;
+    text-align: center;
+}
+
+.socials-container{
+    color: var(--detailscolor);
+    font-size:2.5rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    gap: 1rem;
+}
+
+/* Botones */
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn{
+    font-family: var(--primaryfont);
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 9rem;
+    border-radius: 1.25rem;
+}
+
+.btn-color-2, .btn-color-1{
+    border: var(--detailscolor) 0.1rem solid;
+
+}
+
+.btn-color-2:hover, .btn-color-1:hover{
+    cursor: pointer;
+}
+
+.btn-color-2, .btn-color-1:hover{
+    background:var(--detailscolor);
+    color: white;
+}
+
+.btn-color-2:hover{
+    background: var(--detailscolor);
+    border: white 0.1rem solid;
+}
+
+.btn-color-1{
+    background: none;
+    color: var(--textcolor);
+}
+
+.btn-color-1:hover{
+    border: white 0.1rem solid;
+}
+
+.btn-container{
+    gap: 1rem;
+}
+
+/* Sobre mí */
+
+#sobre-mi{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 50vh;
+}
+
+.sobre-mi-container{
+    text-align: center;
+}
+
+.titulo-sobre-mi{
+    margin-top: 80px;
+    color: var(--textcolor);
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.descripcion-sobre-mi{
+    margin-top: 3rem;
+    font-size: 20px;
+    line-height: 2;
+}
+
+
+
+/* Proyectos */
+
+#proyectos{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 95vh;
+}
+
+.titulo-proyectos{
+    margin-top: 60px;
+    color: var(--textcolor);
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.proyectos-container {
+    text-align: center;
+}
+
+.proyectos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 9rem;
+}
+
+.proyecto-item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.proyecto-item img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.proyecto-item:hover{
+    transition-duration: 0.6s;
+    box-shadow: 0 0 75px rgba(10, 225, 255, 0.6);
+}
+
+/* Contacto */
+
+#contacto{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.titulo-contacto-container {
+    text-align: center;
+}
+
+.titulo-contacto {
+    color: var(--textcolor);
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contacto-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contacto-container form{
+    width: 670px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.02);  
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+}
+
+.contacto-container form input{
+    width: 290px;
+    height: 50px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: var(--textcolor);
+    background: none;
+    border-bottom: 2px solid var(--textcolor);
+}
+
+.contacto-container form input::placeholder{
+    color: var(--textcolor);
+}
+
+.contacto-container form #Apellido, .contacto-container form #Número{
+    margin-left: 20px;
+}
+
+.contacto-container form h4{
+    color: var(--textcolor);
+    width: 600px;
+    margin-top: 20px;
+}
+
+.contacto-container form textarea{
+    background:none;
+    border: none;
+    border-bottom: 2px solid var(--textcolor);
+    color: var(--textcolor);
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 80px;
+    max-height: 80px;
+}
+
+.contacto-container form #botón {
+    border: none;
+    background: var(--textcolor);
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--backgroundcolor);
+    width: 120px;
+    padding: 0.75rem; /* Ajusta según sea necesario */
+    margin-bottom: 30px;
+    transition: 0.3s;
+    margin: auto; /* Centra horizontalmente */
+}
+
+.contacto-container form input:focus::placeholder,
+.contacto-container form textarea:focus::placeholder {
+    color: transparent; /* Hace que el placeholder sea transparente cuando el input está enfocado */
+}
